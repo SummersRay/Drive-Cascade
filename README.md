@@ -1,80 +1,34 @@
-# Academic Project Page Template
+# Drive-Cascade Project Page
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+This repository hosts the GitHub Pages site for the paper:
 
-A clean, responsive template for academic project pages.
+**Drive-Cascade: Autoregressive Occupancy to LiDAR and Video Synthesis**
 
+## Included content
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+- Project landing page in [`index.html`](index.html)
+- Camera-ready PDF in [`static/pdfs/drive-cascade-camera-ready.pdf`](static/pdfs/drive-cascade-camera-ready.pdf)
+- Paper preview image in [`static/images/drive-cascade-preview.png`](static/images/drive-cascade-preview.png)
 
+## Publish with GitHub Pages
 
+If this repository is configured to publish from the default branch root, the page URL is:
 
-## Start using the template
-To start using the template click on `Use this Template`.
+`https://summersray.github.io/Drive-Cascade/`
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+To publish updates:
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+1. Commit your changes.
+2. Push to GitHub.
+3. Wait for GitHub Pages to finish deployment.
 
-## What's New
+## Main files to edit later
 
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
+- [`index.html`](index.html): page content, links, metadata, BibTeX
+- [`static/css/index.css`](static/css/index.css): custom styling
+- [`static/js/index.js`](static/js/index.js): copy button and small UI behavior
 
-## Components
+## Notes
 
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
-
-## Customization
-
-The HTML file has TODO comments showing what to replace:
-
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
-
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
-
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
-
-## Tips
-
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
-
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
-
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+- The source PDF remains in the repository root as an original copy.
+- The site uses a shorter PDF path under `static/pdfs/` for stable public linking.

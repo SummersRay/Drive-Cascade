@@ -4,6 +4,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 function toggleMoreWorks() {
     const dropdown = document.getElementById('moreWorksDropdown');
     const button = document.querySelector('.more-works-btn');
+    if (!dropdown || !button) return;
     
     if (dropdown.classList.contains('show')) {
         dropdown.classList.remove('show');
@@ -19,6 +20,7 @@ document.addEventListener('click', function(event) {
     const container = document.querySelector('.more-works-container');
     const dropdown = document.getElementById('moreWorksDropdown');
     const button = document.querySelector('.more-works-btn');
+    if (!container || !dropdown || !button) return;
     
     if (container && !container.contains(event.target)) {
         dropdown.classList.remove('show');
@@ -31,6 +33,7 @@ document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         const dropdown = document.getElementById('moreWorksDropdown');
         const button = document.querySelector('.more-works-btn');
+        if (!dropdown || !button) return;
         dropdown.classList.remove('show');
         button.classList.remove('active');
     }
@@ -83,6 +86,7 @@ function scrollToTop() {
 // Show/hide scroll to top button
 window.addEventListener('scroll', function() {
     const scrollButton = document.querySelector('.scroll-to-top');
+    if (!scrollButton) return;
     if (window.pageYOffset > 300) {
         scrollButton.classList.add('visible');
     } else {
@@ -120,23 +124,6 @@ function setupVideoCarouselAutoplay() {
 }
 
 $(document).ready(function() {
-    // Check for click events on the navbar burger icon
-
-    var options = {
-		slidesToScroll: 1,
-		slidesToShow: 1,
-		loop: true,
-		infinite: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
-    }
-
-	// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
-	
-    bulmaSlider.attach();
-    
     // Setup video autoplay for carousel
     setupVideoCarouselAutoplay();
-
 })
