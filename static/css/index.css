@@ -162,6 +162,10 @@ body {
     display: inline-block;
 }
 
+.publication-links {
+    margin-top: 2rem;
+}
+
 .publication-awards {
     color: #ef4444;
     width: fit-content;
@@ -321,27 +325,6 @@ body {
 
 .figure-card-wide {
   grid-column: span 2;
-}
-
-.visualization-container {
-  max-width: 1800px !important;
-}
-
-.visualization-frame {
-  width: min(96vw, 1760px);
-  height: clamp(520px, 78vh, 980px);
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-xl);
-  background: #000;
-}
-
-.visualization-frame iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
 }
 
 /* Modern Video and Carousel Styling */
@@ -799,14 +782,6 @@ code {
     grid-column: span 1;
   }
 
-  .visualization-container {
-    max-width: 100% !important;
-  }
-
-  .visualization-frame {
-    width: 100%;
-    height: clamp(280px, 52vh, 520px);
-  }
 }
 
 @media screen and (max-width: 480px) {
