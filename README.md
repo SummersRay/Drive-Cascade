@@ -7,6 +7,7 @@ This repository hosts the GitHub Pages site for the paper:
 ## Included content
 
 - Project landing page in [`index.html`](index.html)
+- Scholar-friendly PDF in [`static/pdfs/drive-cascade-scholar.pdf`](static/pdfs/drive-cascade-scholar.pdf)
 - Camera-ready PDF in [`static/pdfs/drive-cascade-camera-ready.pdf`](static/pdfs/drive-cascade-camera-ready.pdf)
 - Paper preview image in [`static/images/drive-cascade-preview.png`](static/images/drive-cascade-preview.png)
 
@@ -32,3 +33,4 @@ To publish updates:
 
 - The source PDF remains in the repository root as an original copy.
 - The site uses a shorter PDF path under `static/pdfs/` for stable public linking.
+- `drive-cascade-scholar.pdf` is the smaller PDF intended for Google Scholar indexing.
