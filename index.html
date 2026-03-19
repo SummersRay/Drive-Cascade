@@ -279,7 +279,7 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
           <div class="publication-banner">
-            <img src="static/images/figures/teaser.png" alt="Drive-Cascade teaser figure" loading="eager">
+            <img src="static/images/drive-cascade-preview.png" alt="Drive-Cascade teaser figure" loading="eager">
           </div>
           <h2 class="subtitle has-text-centered preview-caption">
             Drive-Cascade models dynamic occupancy autoregressively, then uses the generated 4D state as a shared geometric scaffold for LiDAR and video synthesis.
@@ -347,24 +347,16 @@
         <h2 class="title is-3 has-text-centered">Figures</h2>
         <div class="figure-grid">
           <article class="figure-card figure-card-wide">
+            <img src="static/images/figures/teaser.png" alt="Drive-Cascade teaser figure" loading="lazy">
+            <h3>Teaser</h3>
+            <p>Overview figure highlighting Drive-Cascade's autoregressive occupancy-to-sensor generation pipeline.</p>
+          </article>
+        </div>
+        <div class="figure-grid">
+          <article class="figure-card figure-card-wide">
             <img src="static/images/figures/visualization.png" alt="Drive-Cascade qualitative visualization overview" loading="lazy">
             <h3>Qualitative Overview</h3>
             <p>Combined qualitative comparison highlighting coherent multi-modal generation.</p>
-          </article>
-          <article class="figure-card">
-            <img src="static/images/figures/occ-vis.png" alt="Occupancy visualization" loading="lazy">
-            <h3>Occupancy Visualization</h3>
-            <p>Generated occupancy sequences as the shared spatiotemporal world state.</p>
-          </article>
-          <article class="figure-card">
-            <img src="static/images/figures/lidar-vis.png" alt="LiDAR synthesis visualization" loading="lazy">
-            <h3>LiDAR Synthesis</h3>
-            <p>Point cloud generation aligned to the same dynamic occupancy scaffold.</p>
-          </article>
-          <article class="figure-card figure-card-wide">
-            <img src="static/images/figures/video-vis.png" alt="Video synthesis visualization" loading="lazy">
-            <h3>Video Synthesis</h3>
-            <p>Camera view generation conditioned on the predicted occupancy prior.</p>
           </article>
         </div>
       </div>
@@ -373,7 +365,7 @@
     <section class="section hero is-light" id="visualization">
       <div class="container is-max-widescreen visualization-container">
         <h2 class="title is-3 has-text-centered">Visualization</h2>
-        <div class="publication-video">
+        <div class="publication-video publication-video-large">
           <iframe
             src="https://www.youtube.com/embed/RgqXjaV-4LQ"
             title="Drive-Cascade visualization"
