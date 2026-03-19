@@ -288,6 +288,10 @@ body {
   gap: 1.5rem;
 }
 
+.figure-grid-spaced {
+  margin-top: 2rem;
+}
+
 .figure-card {
   padding: 1.25rem;
   background: white;
@@ -323,6 +327,23 @@ body {
   max-width: 1800px !important;
 }
 
+.visualization-frame {
+  width: min(96vw, 1760px);
+  height: clamp(520px, 78vh, 980px);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+  background: #000;
+}
+
+.visualization-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 /* Modern Video and Carousel Styling */
 .publication-video {
     position: relative;
@@ -347,12 +368,6 @@ body {
     width: 100%;
     height: 100%;
     border-radius: var(--border-radius-lg);
-}
-
-.publication-video-large {
-  max-width: 1700px;
-  margin: 0 auto;
-  padding-bottom: min(75vh, 56.25%);
 }
 
 .publication-body img {
@@ -788,9 +803,9 @@ code {
     max-width: 100% !important;
   }
 
-  .publication-video-large {
-    max-width: 100%;
-    padding-bottom: 62%;
+  .visualization-frame {
+    width: 100%;
+    height: clamp(280px, 52vh, 520px);
   }
 }
 
