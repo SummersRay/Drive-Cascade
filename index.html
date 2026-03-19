@@ -48,7 +48,7 @@
   <meta name="citation_author" content="Ma, Yukai">
   <meta name="citation_author" content="Liu, Yong">
   <meta name="citation_publication_date" content="2026">
-  <meta name="citation_conference_title" content="Camera-ready manuscript">
+  <meta name="citation_conference_title" content="CVPR 2026 Findings">
   <meta name="citation_pdf_url" content="https://summersray.github.io/Drive-Cascade/static/pdfs/drive-cascade-camera-ready.pdf">
 
   <meta name="theme-color" content="#2563eb">
@@ -162,6 +162,22 @@
           </div>
           <i class="fas fa-arrow-right"></i>
         </a>
+        <a href="#figures" class="work-item">
+          <div class="work-info">
+            <h5>Figures</h5>
+            <p>Browse the diagrams and qualitative visualizations from the paper.</p>
+            <span class="work-venue">Gallery</span>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#visualization" class="work-item">
+          <div class="work-info">
+            <h5>Visualization</h5>
+            <p>Watch the qualitative result video directly on the page.</p>
+            <span class="work-venue">Video</span>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+        </a>
         <a href="#paper" class="work-item">
           <div class="work-info">
             <h5>Paper PDF</h5>
@@ -209,7 +225,7 @@
                 <span class="author-block"><sup>1</sup>Zhejiang University</span>
                 <span class="author-block"><sup>2</sup>Huawei Noah's Ark Lab</span>
               </div>
-              <div class="publication-venue">Camera-ready manuscript, 2026</div>
+              <div class="publication-venue">CVPR 2026 Findings</div>
               <div class="eql-cntrb"><small>† Corresponding authors</small></div>
 
               <div class="publication-links">
@@ -238,6 +254,14 @@
                   </a>
                 </span>
                 <span class="link-block">
+                  <a href="https://youtu.be/RgqXjaV-4LQ" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-play-circle"></i>
+                    </span>
+                    <span>Visualization</span>
+                  </a>
+                </span>
+                <span class="link-block">
                   <a href="#BibTeX" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-quote-right"></i>
@@ -256,7 +280,7 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
           <div class="publication-banner">
-            <img src="static/images/drive-cascade-preview.png" alt="First page preview of the Drive-Cascade paper" loading="eager">
+            <img src="static/images/figures/teaser.png" alt="Drive-Cascade teaser figure" loading="eager">
           </div>
           <h2 class="subtitle has-text-centered preview-caption">
             Drive-Cascade models dynamic occupancy autoregressively, then uses the generated 4D state as a shared geometric scaffold for LiDAR and video synthesis.
@@ -325,6 +349,58 @@
       </div>
     </section>
 
+    <section class="section" id="figures">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Figures</h2>
+        <div class="figure-hero">
+          <img src="static/images/figures/framework.png" alt="Drive-Cascade framework overview" loading="lazy">
+          <p>The full Drive-Cascade framework: autoregressive occupancy generation followed by modality-specific LiDAR and video synthesis.</p>
+        </div>
+        <div class="figure-grid">
+          <article class="figure-card">
+            <img src="static/images/figures/visualization.png" alt="Drive-Cascade qualitative visualization overview" loading="lazy">
+            <h3>Qualitative Overview</h3>
+            <p>Combined qualitative comparison highlighting coherent multi-modal generation.</p>
+          </article>
+          <article class="figure-card">
+            <img src="static/images/figures/occ-vis.png" alt="Occupancy visualization" loading="lazy">
+            <h3>Occupancy Visualization</h3>
+            <p>Generated occupancy sequences as the shared spatiotemporal world state.</p>
+          </article>
+          <article class="figure-card">
+            <img src="static/images/figures/video-vis.png" alt="Video synthesis visualization" loading="lazy">
+            <h3>Video Synthesis</h3>
+            <p>Camera view generation conditioned on the predicted occupancy prior.</p>
+          </article>
+          <article class="figure-card">
+            <img src="static/images/figures/lidar-vis.png" alt="LiDAR synthesis visualization" loading="lazy">
+            <h3>LiDAR Synthesis</h3>
+            <p>Point cloud generation aligned to the same dynamic occupancy scaffold.</p>
+          </article>
+          <article class="figure-card">
+            <img src="static/images/figures/sub-vis.png" alt="Sub visualization figure" loading="lazy">
+            <h3>Supplementary Visualization</h3>
+            <p>Additional rendering examples from the paper's figure assets.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light" id="visualization">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Visualization</h2>
+        <div class="publication-video">
+          <iframe
+            src="https://www.youtube.com/embed/RgqXjaV-4LQ"
+            title="Drive-Cascade visualization"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
     <section class="section hero is-light">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
@@ -361,7 +437,7 @@
         <pre id="bibtex-code"><code>@article{lei2026drivecascade,
   title={Drive-Cascade: Autoregressive Occupancy to LiDAR and Video Synthesis},
   author={Lei, Shuangming and Huang, Yuehao and Yao, Yi and Xie, Yijia and Wang, Jingke and Wang, Ruoyu and Lv, Jiajun and Xu, Guanglin and Ye, AiXue and Liu, Bingbing and Cheng, Siyuan and Zhang, Hongbo and Ma, Yukai and Liu, Yong},
-  journal={Camera-ready manuscript},
+  journal={CVPR 2026 Findings},
   year={2026},
   url={https://summersray.github.io/Drive-Cascade/}
 }</code></pre>
