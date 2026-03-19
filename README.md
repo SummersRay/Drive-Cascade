@@ -6,6 +6,8 @@ This repository hosts the GitHub Pages site for the paper:
 
 🎉 Accepted to **CVPR 2026 Findings Track**!
 
+🔗 Project page: [https://summersray.github.io/Drive-Cascade/](https://summersray.github.io/Drive-Cascade/)
+
 ## 🚀 Code Coming Soon
 
 The code will be open-sourced shortly. Stay tuned!
