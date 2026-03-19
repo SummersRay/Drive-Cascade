@@ -206,8 +206,8 @@
             <div class="column has-text-centered">
               <h1 class="title is-1 publication-title">Drive-Cascade: Autoregressive Occupancy to LiDAR and Video Synthesis</h1>
               <div class="is-size-5 publication-authors">
-                <span class="author-block">Shuangming Lei<sup>1</sup>,</span>
-                <span class="author-block">Yuehao Huang<sup>1</sup>,</span>
+                <span class="author-block">Shuangming Lei<sup>1,*</sup>,</span>
+                <span class="author-block">Yuehao Huang<sup>1,*</sup>,</span>
                 <span class="author-block">Yi Yao<sup>1</sup>,</span>
                 <span class="author-block">Yijia Xie<sup>1</sup>,</span>
                 <span class="author-block">Jingke Wang<sup>1</sup>,</span>
@@ -226,7 +226,6 @@
                 <span class="author-block"><sup>2</sup>Huawei Noah's Ark Lab</span>
               </div>
               <div class="publication-venue">CVPR 2026 Findings</div>
-              <div class="eql-cntrb"><small>† Corresponding authors</small></div>
 
               <div class="publication-links">
                 <span class="link-block">
@@ -258,7 +257,7 @@
                     <span class="icon">
                       <i class="fas fa-play-circle"></i>
                     </span>
-                    <span>Visualization</span>
+                    <span>Demo</span>
                   </a>
                 </span>
                 <span class="link-block">
@@ -296,13 +295,7 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                The generation of realistic, consistent, and controllable multi-modal data for dynamic driving scenes remains a crucial challenge in autonomous vehicle simulation. Current methods often struggle to maintain geometric and temporal coherence, particularly when synthesizing complex interactions across disparate modalities, such as LiDAR and video.
-              </p>
-              <p>
-                Drive-Cascade addresses this with a cascaded autoregressive framework built around dynamic occupancy as a unified and explicit intermediate representation. The model first generates controllable occupancy sequences that capture scene geometry over time, then conditions specialized diffusion models to synthesize aligned LiDAR point clouds and camera videos.
-              </p>
-              <p>
-                By anchoring every modality to a shared spatiotemporal prior, the framework improves long-horizon temporal coherence, cross-modal consistency, and controllability for high-fidelity driving simulation.
+                The generation of realistic, consistent, and controllable multi-modal data for dynamic driving scenes remains a crucial challenge in autonomous vehicle simulation. Current methods often struggle to maintain geometric and temporal coherence, particularly when synthesizing complex interactions across disparate modalities, such as LiDAR and video. In this paper, we propose a novel cascaded autoregressive framework to generate highly realistic and multi-modally aligned driving scenes. The key innovation of this work is the utilization of dynamic occupancy as a unified and explicit intermediate representation. The proposed framework operates in two stages: first, the system generates a coherent sequence of controllable dynamic occupancy grids that capture the spatiotemporal geometry of the scene. Second, conditioned on the generated occupancy prior, two specialized diffusion models autoregressively synthesize the corresponding LiDAR point clouds and camera videos. By anchoring the generation of all modalities to a shared geometric foundation, the proposed model inherently ensures cross-modal consistency and temporal stability. Extensive experiments demonstrate that the proposed approach significantly outperforms state-of-the-art methods in terms of generation fidelity, geometric accuracy, and long-term temporal coherence for both LiDAR and video synthesis, paving the way for high-fidelity and multi-modal simulation.
               </p>
             </div>
           </div>
@@ -353,7 +346,7 @@
       <div class="container is-max-desktop">
         <h2 class="title is-3 has-text-centered">Figures</h2>
         <div class="figure-grid">
-          <article class="figure-card">
+          <article class="figure-card figure-card-wide">
             <img src="static/images/figures/visualization.png" alt="Drive-Cascade qualitative visualization overview" loading="lazy">
             <h3>Qualitative Overview</h3>
             <p>Combined qualitative comparison highlighting coherent multi-modal generation.</p>
@@ -364,26 +357,21 @@
             <p>Generated occupancy sequences as the shared spatiotemporal world state.</p>
           </article>
           <article class="figure-card">
-            <img src="static/images/figures/video-vis.png" alt="Video synthesis visualization" loading="lazy">
-            <h3>Video Synthesis</h3>
-            <p>Camera view generation conditioned on the predicted occupancy prior.</p>
-          </article>
-          <article class="figure-card">
             <img src="static/images/figures/lidar-vis.png" alt="LiDAR synthesis visualization" loading="lazy">
             <h3>LiDAR Synthesis</h3>
             <p>Point cloud generation aligned to the same dynamic occupancy scaffold.</p>
           </article>
           <article class="figure-card figure-card-wide">
-            <img src="static/images/figures/sub-vis.png" alt="Sub visualization figure" loading="lazy">
-            <h3>Supplementary Visualization</h3>
-            <p>Additional rendering examples from the paper's figure assets.</p>
+            <img src="static/images/figures/video-vis.png" alt="Video synthesis visualization" loading="lazy">
+            <h3>Video Synthesis</h3>
+            <p>Camera view generation conditioned on the predicted occupancy prior.</p>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section hero is-light" id="visualization">
-      <div class="container is-max-widescreen">
+      <div class="container is-max-widescreen visualization-container">
         <h2 class="title is-3 has-text-centered">Visualization</h2>
         <div class="publication-video">
           <iframe
