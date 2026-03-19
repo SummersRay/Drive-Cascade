@@ -123,6 +123,7 @@ body {
 }
 
 .publication-banner {
+  max-width: 900px;
   border-radius: var(--border-radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
@@ -764,6 +765,10 @@ code {
   
   .content.has-text-justified {
     font-size: 1rem;
+  }
+
+  .publication-banner {
+    max-width: 100%;
   }
 
   .feature-card {
